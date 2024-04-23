@@ -1,0 +1,128 @@
+/* variaveis */
+:root{
+    --white: #f8fafc;
+    --black: #000;
+    --cinza: #312d37;
+    --orange: #EB4F0C;
+    --blue: rgb(21, 21, 75);
+    --red:rgb(209, 0, 0);
+    --green: green;
+}
+/* formatação */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+body#admin{
+    background: var(--orange);
+}
+/* Cabeçalho */
+header{
+    background-color: var(--cinza);
+    color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+/* navegação */
+.navbar{
+    background:var(--blue);
+    padding: 1rem;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    justify-content:right;
+}
+.navbar li{
+    margin-right: 2rem;
+}
+.navbar a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--orange);
+}
+.navbar a:hover{
+    background: var(--orange);
+    color: var(--white);
+}
+.navbar a#arearestrita:hover{
+    background: var(--red);
+    color: var(--white);
+}
+/* DashBoars */
+/* cards */
+div.placasdashboard{
+    display: flex;
+    justify-content: space-around;
+}
+div.card1{
+    background: var(--green);
+    padding: 1rem;
+    width: 20%;
+    border-radius: 10px;
+}
+div.card2{
+    background: var(--blue);
+    padding: 1rem;
+    width: 20%;
+    border-radius: 10px;
+}
+div.card3{
+    background: var(--red);
+    padding: 1rem;
+    width: 20%;
+    border-radius: 10px;
+}
+div.textdasboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div p.paragrafo{
+    font-weight: bold;
+    color: var(--white);
+}
+/* administrativo */
+#formulario{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vh;
+    margin-bottom: 10px;
+}
+label,input, a{
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vh;
+}
+a{
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+/*  */
+div.center-title{
+    text-align: center;
+    margin-top: 30px;
+}
+/* conteudo */
+main.container{
+    margin: 10px;
+}
+/* formulario */
+div.formulario{
+    width: 50%;
+    display: inline-block;
+    justify-content:space-around;
+}
