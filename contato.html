@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Atividade 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/sobre.css">
+    </head>
+    <body>
+        <header>
+            <span>rauloliveiraprado@gmail.com </span>
+            <span> (11) 9xxx - xxxx</span>
+        </header>
+
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html">Quem é o Raul</a>
+                </li>
+                <li>
+                    <a href="corinthians.html">Site do Corinthians copia</a>
+                </li>
+                <li>
+                    <a href="dashboard.html">Tela DashBoard</a>
+                </li>
+                <li>
+                    <a href="/portfolio">Trabalhos</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+                <li>
+                    <a href="/instagram">Instagram</a>
+                </li>
+                <li>
+                    <a href="/admin.html" id="arearestrita">Área Restrita</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <main class="container">
+            <section>
+                <div class="center-title">
+                    <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+                    <hr>
+                    <div class="formulario">
+                        <form>
+                            <fieldset>
+                                <legend>Preecha os campos:</legend>
+                                <label for="name">Nome: </label>
+                                <input type="text" id="name" onkeyup="camposFormulario()"/>
+                                <span class="mensagemAlerta"></span>
+
+                                <label for="email">E-mail: </label>
+                                <input type="email" id="email"/>
+                                <span class="mensagemAlerta"></span>
+
+                                <label for="phone">Telefone: </label>
+                                <input type="tel" id="phone" />
+                                <label for="local">Enderenço: </label>
+                                <input type="text" id="local" />
+                                <label for="browser">Escolha sua opção:</label>
+                                <input list="browsers" name="browser" id="browser">
+                                <datalist id="browsers">
+                                    <option value="Edge">
+                                    <option value="Firefox">
+                                    <option value="Chrome">
+                                    <option value="Opera">
+                                    <option value="Safari">
+                                </datalist>
+                                <br>
+                                <textarea name="msg" cols="60" rows="5"></textarea>
+                                <button type="button" id="enviarMensagem" onclick="MessagemDeSucesso()">OK</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                
+                <dialog id="AlertSucesso">
+                    <div class="containerAlert">
+                        <p>Mensagem enviada com sucesso</p>
+                    </div>
+                </dialog>
+                <hr>
+            </section>
+            
+        </main>
+        
+        <footer>
+            <p>Contatos</p>
+            <address>E-mail: <a href="mailto:rauloliveiraprado@gmail.com">rauloliveiraprado@gmail.com</a></address>
+            <time datetime="2024-04-18">18 Abril</time>.
+        </footer>
+        <script src="/js/script.js"></script>
+    </body>
+</html>

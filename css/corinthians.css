@@ -1,0 +1,52 @@
+/* variaveis */
+:root{
+    --white: #f8fafc;
+    --black: #000;
+    --cinza: #312d37;
+    --orange: #EB4F0C;
+    --blue: rgb(21, 21, 75);
+    --red:rgb(209, 0, 0);
+    --green: green;
+}
+/* formatação */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+header.cabecalho{
+    background: var(--black);
+    height: 7rem;
+    box-shadow: 0 0 15px #000;
+}
+header div.imagem-center{
+    align-items: center;
+}
+/* navegação */
+nav.navbar-sobre{
+    padding: 1rem;
+    margin-top: 3rem;
+}
+nav.navbar-sobre ul{
+    list-style-type: none;
+    display: flex;
+    justify-content:right;
+}
+nav.navbar-sobre li{
+    margin-right: 2rem;
+}
+nav.navbar-sobre a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--black);
+}
+nav.navbar-sobre a:hover{
+    background: var(--black);
+    color: var(--white);
+}
+nav.navbar-sobre a#arearestrita:hover{
+    background: var(--red);
+    color: var(--white);
+}
